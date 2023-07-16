@@ -9,3 +9,15 @@
     font-size: 14px;
   }
 }
+
+.title-1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--text-1, #161515);
+
+  @include laptop-min {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}

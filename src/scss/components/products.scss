@@ -125,6 +125,28 @@
     line-height: 150%;
     text-transform: uppercase;
 
+    &--small {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--text-1, #161515);
+    }
+
+    @include laptop-min {
+      font-size: 14px;
+    }
+  }
+
+  &__slide-desc {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--text-1, #161515);
+
     @include laptop-min {
       font-size: 14px;
     }
