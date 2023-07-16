@@ -40,7 +40,7 @@ export default function spoller() {
       let spollerTitles = spollersBlock.querySelectorAll("[data-spoller]");
       if (spollerTitles.length) {
         spollerTitles = Array.from(spollerTitles).filter(
-          (item) => item.closest("[data-spollers]") === spollersBlock
+          (item) => item.closest("[data-spollers]") === spollersBlock,
         );
         spollerTitles.forEach((spollerTitle) => {
           if (hideSpollerBody) {
@@ -182,7 +182,7 @@ export default function spoller() {
             detail: {
               target: target,
             },
-          })
+          }),
         );
       }, duration);
     }
@@ -219,7 +219,7 @@ export default function spoller() {
             detail: {
               target: target,
             },
-          })
+          }),
         );
       }, duration);
     }

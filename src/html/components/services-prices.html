@@ -28,10 +28,38 @@
               </button>
               <h3 class="services-prices__modal-title">Выберите раздел</h3>
               <ul data-spollers data-one-spoller class="list services-prices__sidebar-list">
-                <li class="services-prices__sidebar-item">
-                  <a href="#" class="services-prices__sidebar-item-btn active">
+                <li
+                  class="services-prices__sidebar-item"
+                  data-da=".services-prices__sidebar-list,994"
+                >
+                  <a
+                    href="#"
+                    data-spoller
+                    class="services-prices__sidebar-item-btn services-prices__sidebar-item-btn--mobile-hide _spoller-active"
+                  >
                     Консультация врача и косметолога
                   </a>
+                  <ul class="services-prices__sidebar-sublist--hidden"></ul>
+                </li>
+                <li class="services-prices__sidebar-item">
+                  <a
+                    href="#"
+                    data-spoller
+                    class="services-prices__sidebar-item-btn services-prices__sidebar-item-btn--mobile _spoller-active"
+                  >
+                    Все процедуры
+                  </a>
+                  <ul class="services-prices__sidebar-sublist--hidden"></ul>
+                </li>
+                <li class="services-prices__sidebar-item">
+                  <a
+                    href="#"
+                    data-spoller
+                    class="services-prices__sidebar-item-btn services-prices__sidebar-item-btn--mobile"
+                  >
+                    Консультация врача и косметолога
+                  </a>
+                  <ul class="services-prices__sidebar-sublist--hidden"></ul>
                 </li>
                 <li class="services-prices__sidebar-item">
                   <!-- вешаем класс _spoller-active на кнопку, если нужно сделать спойлер открытым изначально -->
@@ -40,6 +68,9 @@
                   </button>
                   <ul class="list services-prices__sidebar-sublist">
                     <!-- вешаем active на li, чтобы сделать активным -->
+                    <li class="services-prices__sidebar-subitem active">
+                      <a href="#" class="services-prices__sidebar-anchor">Все процедуры</a>
+                    </li>
                     <li class="services-prices__sidebar-subitem">
                       <a href="#" class="services-prices__sidebar-anchor">Лазерное омоложение</a>
                     </li>
@@ -63,6 +94,9 @@
                     Инъекционная косметология
                   </button>
                   <ul class="list services-prices__sidebar-sublist">
+                    <li class="services-prices__sidebar-subitem active">
+                      <a href="#" class="services-prices__sidebar-anchor">Все процедуры</a>
+                    </li>
                     <li class="services-prices__sidebar-subitem">
                       <a href="#" class="services-prices__sidebar-anchor">Биоревитализация</a>
                     </li>
@@ -79,6 +113,9 @@
                     Лазерная эпиляция
                   </button>
                   <ul class="list services-prices__sidebar-sublist">
+                    <li class="services-prices__sidebar-subitem active">
+                      <a href="#" class="services-prices__sidebar-anchor">Все процедуры</a>
+                    </li>
                     <li class="services-prices__sidebar-subitem">
                       <a href="#" class="services-prices__sidebar-anchor">Прайс</a>
                     </li>
@@ -107,6 +144,9 @@
                     Удаление сосудов и новообразований
                   </button>
                   <ul class="list services-prices__sidebar-sublist">
+                    <li class="services-prices__sidebar-subitem active">
+                      <a href="#" class="services-prices__sidebar-anchor">Все процедуры</a>
+                    </li>
                     <li class="services-prices__sidebar-subitem">
                       <a href="#" class="services-prices__sidebar-anchor">Прайс</a>
                     </li>
@@ -135,6 +175,9 @@
                     ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ (уходы) 
                   </button>
                   <ul class="list services-prices__sidebar-sublist">
+                    <li class="services-prices__sidebar-subitem active">
+                      <a href="#" class="services-prices__sidebar-anchor">Все процедуры</a>
+                    </li>
                     <li class="services-prices__sidebar-subitem">
                       <a href="#" class="services-prices__sidebar-anchor">Прайс</a>
                     </li>
@@ -225,10 +268,11 @@
             </li>
           </ul>
           <p class="services-prices__tab-content">
-            * Данное предложение не является публичной офертой <br />
+            <span>*</span> Данное предложение не является публичной офертой <br />
             <br />
-            * Стоимость услуги в прайсе может быть указана без учета скидки или действующей акции.
-            Точную стоимость услуг просим вас уточнить у администратора Бенуа Медикал Спа.
+            <span>*</span> Стоимость услуги в прайсе может быть указана без учета скидки или
+            действующей акции. Точную стоимость услуг просим вас уточнить у администратора Бенуа
+            Медикал Спа.
           </p>
         </div>
       </div>
