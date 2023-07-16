@@ -1,0 +1,16 @@
+.overlay {
+  position: fixed;
+  z-index: 100;
+  background-color: var(--text-2);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+  inset: 0;
+
+  &.active {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}

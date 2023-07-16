@@ -1,0 +1,20 @@
+:root {
+  --content-container-width: 1230px;
+  --offset-width: 30px;
+  --container-width: calc(var(--content-container-width) + (var(--offset-width) * 2));
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--offset-width);
+  width: 100%;
+  max-width: var(--container-width);
+
+  @include laptop-min {
+    padding: 0 25px;
+  }
+
+  @include tablet {
+    padding: 0 20px;
+  }
+}

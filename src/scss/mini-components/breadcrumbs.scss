@@ -1,0 +1,53 @@
+.breadcrumbs {
+  display: flex;
+  column-gap: 40px;
+  overflow: hidden;
+  padding-bottom: 40px;
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: -27px;
+        width: 16px;
+        height: 1px;
+        background-color: var(--text-4);
+      }
+    }
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-4);
+
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include laptop-min {
+    column-gap: 30px;
+    padding-bottom: 15px;
+  }
+
+  @include laptop-min {
+    li {
+      &:not(:last-child) {
+        &::after {
+          right: -24px;
+        }
+      }
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}

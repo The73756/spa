@@ -1,0 +1,55 @@
+.partners {
+  padding-bottom: 120px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 810px;
+    gap: 30px;
+
+    @include laptop-min {
+      gap: 24px;
+    }
+
+    @include mobile {
+      gap: 20px;
+      row-gap: 15px;
+    }
+  }
+
+  &__btn {
+    width: 135px;
+
+    @include laptop-min {
+      width: 124px;
+    }
+
+    @include mobile {
+      width: 90px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  @include laptop {
+    padding-bottom: 105px;
+  }
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+}

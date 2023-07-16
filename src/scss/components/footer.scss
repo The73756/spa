@@ -1,0 +1,160 @@
+.footer {
+  padding: 50px 0 25px;
+  color: var(--bg-color);
+  background-color: var(--text-2);
+
+  &__top {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    row-gap: 55px;
+
+    @include laptop {
+      margin-bottom: 65px;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__social {
+    max-width: 260px;
+
+    @include laptop {
+      display: flex;
+      column-gap: 20px;
+      flex-wrap: wrap;
+      max-width: none;
+      row-gap: 15px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 12px;
+
+    @include laptop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: color 0.2s ease;
+
+    @include hover {
+      color: var(--beige);
+    }
+  }
+
+  &__social-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__social-content {
+    margin: 0;
+    font-size: 10px;
+    line-height: 150%;
+    opacity: 0.56;
+
+    @include laptop {
+      max-width: 260px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 710px;
+  }
+
+  &__form-title {
+    margin: 0 0 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+
+    @include laptop {
+      font-size: 18px;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 15px;
+    gap: 12px;
+  }
+
+  &__form-item {
+    flex: 0 1 240px;
+
+    @include tablet {
+      flex-basis: calc(50% - 6px);
+    }
+
+    @include mobile-min {
+      flex-basis: 100%;
+    }
+  }
+
+  &__form-btn {
+    @include mobile-min {
+      flex-basis: 100%;
+    }
+  }
+
+  &__form-content {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.56;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include mobile {
+      gap: 15px;
+    }
+  }
+
+  &__bottom-content {
+    margin: 0;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.56;
+  }
+
+  &__bottom-list {
+    display: flex;
+    column-gap: 15px;
+    flex: 0 1 710px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  &__bottom-list-btn {
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    opacity: 0.56;
+    transition: opacity 0.2s ease;
+
+    @include hover {
+      opacity: 1;
+    }
+  }
+}

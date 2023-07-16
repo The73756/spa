@@ -1,0 +1,71 @@
+.we-use {
+  margin-bottom: 80px;
+  padding: 80px 0;
+  background-color: #fff;
+
+  &__title {
+    margin: 0 0 40px;
+
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  &__content {
+    margin: 0;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+
+    @include laptop-min {
+      max-width: 535px;
+      font-size: 18px;
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 710px;
+    gap: 15px;
+
+    @include laptop-min {
+      margin: 0 auto;
+      max-width: 720px;
+    }
+
+    @include mobile {
+      gap: 16px;
+    }
+  }
+
+  &__gallery-img {
+    width: calc(100% / 3 - 10px);
+    height: 135px;
+    object-fit: cover;
+
+    @include laptop-min {
+      height: 140px;
+    }
+
+    @include mobile {
+      width: calc(50% - 8px);
+    }
+
+    @include mobile-min {
+      height: 90px;
+    }
+  }
+
+  @include tablet {
+    padding: 55px 0;
+  }
+}

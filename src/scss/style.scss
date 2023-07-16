@@ -1,0 +1,46 @@
+@import "./fonts/fonts";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// libs
+@import "./libs/swiper";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/title";
+
+// mini-components
+@import "./mini-components/dropdown";
+@import "./mini-components/overlay";
+@import "./mini-components/slider-scrollbar";
+@import "./mini-components/form";
+@import "./mini-components/breadcrumbs";
+@import "./mini-components/tab";
+@import "./mini-components/modal";
+
+// components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/about";
+@import "./components/approach";
+@import "./components/specialists";
+@import "./components/record";
+@import "./components/products";
+@import "./components/reviews";
+@import "./components/partners";
+@import "./components/contacts";
+@import "./components/procedure";
+@import "./components/detail-procedure";
+@import "./components/prices";
+@import "./components/results";
+@import "./components/we-use";
+@import "./components/answers";
+@import "./components/services-prices";
+@import "./components/footer";

@@ -1,0 +1,26 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin overflow-text($lines) {
+  display: box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+}

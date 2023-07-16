@@ -1,0 +1,152 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="header__logo">
+      <img src="@img/logos/logo.svg" alt="Логотип" class="header__logo-img" />
+    </a>
+    <div class="header__right">
+      <ul class="list header__contacts">
+        <li>
+          <svg class="header__contacts-icon">
+            <use xlink:href="img/icons/icons.svg#svg-location"></use>
+          </svg>
+          <span>СПб, Каменноостровский пр. 26-28</span>
+        </li>
+        <li>
+          <a href="tel:+78124584443">
+            <svg class="header__contacts-icon">
+              <use xlink:href="img/icons/icons.svg#svg-phone"></use>
+            </svg>
+            <span>+7 (812) 458-44-43</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+78124584443">
+            <svg class="header__contacts-icon">
+              <use xlink:href="img/icons/icons.svg#svg-phone"></use>
+            </svg>
+            <span>+7 (812) 458-44-43</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:mail@mail.ru">
+            <svg class="header__contacts-icon">
+              <use xlink:href="img/icons/icons.svg#svg-mail"></use>
+            </svg>
+            <span>mail@mail.ru</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <svg class="header__contacts-icon">
+              <use xlink:href="img/icons/icons.svg#svg-whats"></use>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </li>
+      </ul>
+      <button class="btn header__nav-btn" id="burger-btn">
+        <svg class="header__nav-btn-icon">
+          <use xlink:href="img/icons/icons.svg#svg-burger"></use>
+        </svg>
+      </button>
+      <div class="overlay header__overlay" id="burger-overlay"></div>
+      <nav class="header__nav" id="burger-menu">
+        <button
+          data-da=".header__right, 576, 2"
+          class="btn header__nav-btn header__nav-btn--close"
+          id="burger-close"
+        >
+          <svg class="header__nav-btn-icon">
+            <use xlink:href="img/icons/icons.svg#svg-close"></use>
+          </svg>
+        </button>
+        <ul data-spollers="992, max" data-one-spoller class="list header__nav-list">
+          <li class="dropdown _media-spoller">
+            <button data-spoller class="btn dropdown__btn">
+              О центре
+              <svg class="dropdown__icon">
+                <use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+              </svg>
+            </button>
+            <div class="dropdown__item">
+              <div class="dropdown__body">
+                <ul class="list header__dropdown-list">
+                  <li>
+                    <a href="#">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#">История</a>
+                  </li>
+                  <li>
+                    <a href="#">Галерея центра </a>
+                  </li>
+                  <li>
+                    <a href="#">Галерея работ</a>
+                  </li>
+                  <li>
+                    <a href="#">Специальные предложения</a>
+                  </li>
+                  <li>
+                    <a href="#">Работа у нас</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown _media-spoller">
+            <button data-spoller class="btn dropdown__btn">
+              Услуги и цены
+              <svg class="dropdown__icon">
+                <use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+              </svg>
+            </button>
+            <div class="dropdown__item">
+              <div class="dropdown__body">
+                <ul class="list header__dropdown-list">
+                  <li>
+                    <a href="service.html">Эстетическая косметология</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Аппаратная косметология</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Инъекционная косметология</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Лазерная эпиляция</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Удаление сосудов и новообразований</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Стоунтерапия</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Медицинский педикюр</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Эстетика: волосы, брови и ресницы</a>
+                  </li>
+                  <li>
+                    <a href="service.html">Ногтевой сервис</a>
+                  </li>
+                </ul>
+                <a href="#" class="header__dropdown-btn-stroke">Все услуги</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Специалисты</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#record">Записаться онлайн</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,9 @@
+.slider-scrollbar {
+  height: 2px;
+  background-color: rgb(174 153 141 / 40%);
+  cursor: pointer;
+
+  .swiper-scrollbar-drag {
+    background-color: var(--text-2);
+  }
+}

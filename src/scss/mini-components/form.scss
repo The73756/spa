@@ -1,0 +1,17 @@
+.form {
+  &__input {
+    outline: none;
+    border: 1px solid var(--beige);
+    border-radius: 0;
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 150%;
+    color: inherit;
+    background-color: transparent;
+
+    &::placeholder {
+      color: currentcolor;
+    }
+  }
+}

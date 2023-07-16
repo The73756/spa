@@ -1,0 +1,164 @@
+.about {
+  overflow: hidden;
+  padding-top: 120px;
+
+  &__header {
+    margin-bottom: 50px;
+
+    @include laptop-min {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      gap: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 40px;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include laptop-min {
+      flex-direction: column;
+      max-width: 535px;
+      gap: 15px;
+    }
+  }
+
+  &__content-main {
+    margin: 0;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+
+    @include laptop-min {
+      max-width: 450px;
+      font-size: 18px;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    max-width: 715px;
+    font-size: 16px;
+    line-height: 150%;
+
+    @include laptop-min {
+      font-size: 14px;
+    }
+  }
+
+  &__slider {
+    overflow: visible;
+  }
+
+  &__slide {
+    width: 815px;
+    height: 505px;
+    opacity: 0.2;
+    transition: opacity 0.2s ease;
+
+    &.swiper-slide-active {
+      opacity: 1;
+    }
+
+    @include laptop {
+      width: 556px;
+      height: 400px;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 350px;
+    }
+
+    @include mobile {
+      height: 320px;
+    }
+  }
+
+  &__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__slider-btn {
+    --offset: 35px;
+
+    position: absolute;
+    top: calc(50% - var(--offset));
+    z-index: 10;
+    color: #fff;
+
+    &--prev {
+      left: 90px;
+      transform: rotate(180deg);
+    }
+
+    &--next {
+      right: 90px;
+    }
+
+    @include desktop {
+      &--prev {
+        left: 60px;
+      }
+
+      &--next {
+        right: 60px;
+      }
+    }
+
+    @include laptop {
+      --offset: 28px;
+    }
+
+    @include laptop-min {
+      &--prev {
+        left: 5px;
+      }
+
+      &--next {
+        right: 5px;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__slider-btn-icon {
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+
+    @include laptop {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include laptop {
+    padding-top: 100px;
+  }
+
+  @include tablet {
+    padding-top: 80px;
+  }
+}
