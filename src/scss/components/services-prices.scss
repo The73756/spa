@@ -233,6 +233,18 @@
       }
     }
 
+    &--mobile {
+      display: none;
+
+      @include laptop-min {
+        display: block;
+
+        &-hide {
+          display: none;
+        }
+      }
+    }
+
     @include hover {
       color: var(--beige);
     }
@@ -249,6 +261,10 @@
 
   &__sidebar-sublist {
     padding: 10px 0 0 20px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__sidebar-subitem {
@@ -354,7 +370,7 @@
     transition: color 0.2s ease;
 
     @include hover {
-      color: var(--beige);
+      color: #78685f;
     }
 
     @include laptop-min {
@@ -425,9 +441,19 @@
   }
 
   &__tab-content {
+    margin: 56px 0 0;
+    padding: 0;
     font-size: 14px;
     line-height: 130%;
-    color: var(--beige);
+    color: var(--text-2);
+
+    span {
+      color: var(--beige);
+    }
+
+    @include laptop-min {
+      margin-top: 40px;
+    }
 
     @include mobile {
       font-size: 12px;

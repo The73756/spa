@@ -1,0 +1,101 @@
+.history {
+  margin-bottom: 104px;
+
+  &__title {
+    margin: -24px 0 32px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--text-1, #161515);
+
+    @include laptop {
+      margin-top: 1px;
+    }
+
+    @include laptop-min {
+      font-size: 32px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include desktop {
+      max-width: 712px;
+    }
+
+    @include laptop-min {
+      max-width: 536px;
+    }
+
+    @include mobile {
+      max-width: 320px;
+    }
+  }
+
+  &__content-main {
+    margin: 0 0 40px;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--text-1, #161515);
+
+    @include desktop {
+      max-width: 100%;
+    }
+
+    @include laptop-min {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__content {
+    max-width: 712px;
+  }
+
+  &__image {
+    margin-bottom: 40px;
+    max-width: 712px;
+    max-height: 457px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-2, #252525);
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include mobile {
+        margin-bottom: 24px;
+      }
+    }
+
+    @include laptop-min {
+      font-size: 14px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 80px;
+  }
+}
