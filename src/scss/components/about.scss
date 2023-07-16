@@ -154,6 +154,23 @@
     }
   }
 
+  &--big {
+    .about__title {
+      margin-bottom: 32px;
+
+      @extend .title-1;
+    }
+
+    .about__header {
+      margin-bottom: 40px;
+
+      @include laptop-min {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  }
+
   @include laptop {
     padding-top: 100px;
   }
@@ -161,4 +178,9 @@
   @include tablet {
     padding-top: 80px;
   }
+}
+
+// noinspection ALL
+.about--big {
+  padding-top: 16px;
 }
