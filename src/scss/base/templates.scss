@@ -18,8 +18,10 @@
   }
 }
 
+// stylelint-disable
 @mixin overflow-text($lines) {
   display: box;
+  display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $lines;
