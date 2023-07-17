@@ -1,0 +1,193 @@
+.politic {
+  margin-bottom: 104px;
+
+  &__title {
+    margin: -24px 0 32px;
+    max-width: 1024px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--text-1);
+
+    @include laptop {
+      margin-top: 1px;
+    }
+
+    @include laptop-min {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  ol {
+    list-style-type: none;
+  }
+
+  &__list {
+    counter-reset: list1;
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    margin: 0;
+    padding-left: 0;
+    max-width: 960px;
+    gap: 16px;
+
+    li:first-child {
+      margin-top: 12px;
+    }
+
+    li::before {
+      counter-increment: list1;
+      content: counter(list1) ".";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      color: var(--text-1);
+    }
+
+    ol {
+      counter-reset: list2;
+      padding-left: 0;
+    }
+
+    ol li::before {
+      counter-increment: list2;
+      content: counter(list1) "." counter(list2) ". ";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--text-2);
+    }
+
+    ol ol {
+      counter-reset: list3;
+      margin-top: 12px;
+    }
+
+    ol ol li::before {
+      counter-increment: list3;
+      content: counter(list1) "." counter(list2) "." counter(list3) ". ";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--text-2);
+    }
+
+    ol ol ol {
+      counter-reset: list4;
+      list-style-type: decimal;
+      list-style-position: outside;
+      padding-left: 25px;
+    }
+
+    ol ol ol li::before {
+      counter-increment: list4;
+      content: counter(list4) ". ";
+      font-size: 0;
+      visibility: hidden;
+    }
+
+    ul {
+      counter-reset: list5;
+      list-style-type: disc;
+      list-style-position: outside;
+      margin: 12px 0;
+      padding-left: 30px;
+    }
+
+    ul li::before {
+      counter-increment: list5;
+      content: counter(list5) ".";
+      font-size: 0;
+      visibility: hidden;
+    }
+
+    @include laptop-min {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-2);
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    @include laptop-min {
+      font-size: 14px;
+    }
+  }
+
+  ul li {
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__block {
+    padding: 40px;
+    background-color: #fff;
+
+    @include laptop-min {
+      padding: 40px 24px;
+    }
+
+    @include mobile {
+      padding: 32px 20px;
+    }
+  }
+
+  &__block-title {
+    display: inline;
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--text-1, #161515);
+
+    @include laptop-min {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &:not(:only-child) {
+      &:first-child {
+        display: inline;
+      }
+
+      &:nth-child(2) {
+        margin-top: 12px;
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @include laptop-min {
+    margin-bottom: 80px;
+  }
+}
+
+.container--adaptive {
+  @include laptop-min {
+    padding: 0;
+  }
+}
