@@ -1,0 +1,83 @@
+.stocks-page {
+  margin-bottom: 104px;
+
+  .procedure {
+    padding: 0;
+  }
+
+  .procedure__form {
+    margin-top: 32px;
+
+    @media (max-width: 1118px) {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    // stylelint-disable
+    @include tablet {
+      max-width: none;
+    }
+    // stylelint-enable
+  }
+
+  .procedure__stock-info {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      max-width: none;
+    }
+
+    @media (max-width: 1118px) {
+      max-width: 535px;
+    }
+    // stylelint-disable
+    @include laptop {
+      max-width: 430px;
+    }
+    // stylelint-enable
+    @include laptop-min {
+      max-width: 350px;
+    }
+
+    @include tablet {
+      max-width: none;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .procedure__item:not(:last-child) {
+    margin-bottom: 32px;
+
+    @include laptop-min {
+      margin-bottom: 16px;
+    }
+  }
+
+  .procedure__form-btn {
+    @include desktop {
+      width: auto;
+    }
+  }
+
+  &__bottom {
+    margin-top: auto;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__wrapper {
+    margin-top: 32px;
+  }
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+}
