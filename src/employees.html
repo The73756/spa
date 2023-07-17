@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   @@include('html/head.html',{ "title":"pauchoo0k" })
   <body class="body">
     @@include('html/components/header.html')
-    <main class="main main--about">
+    <main class="main">
       <div class="container">
         <ul class="list breadcrumbs breadcrumbs--small">
           <li>
@@ -13,13 +13,11 @@
             <a href="#">О центре</a>
           </li>
           <li>
-            <a href="#">О нас</a>
+            <a href="#">Наши сотрудники</a>
           </li>
         </ul>
       </div>
-     @@include('html/components/about.html', {"title": "О нас", "additionalClass": "about--big"})
-     @@include('html/components/partners.html')
-     @@include('html/components/products-benuashop.html')
+      @@include('html/components/employees.html')
     </main>
     @@include('html/components/footer.html')
     <script src="js/app.min.js"></script>

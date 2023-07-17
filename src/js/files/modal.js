@@ -11,7 +11,7 @@ export default function modal() {
         const modalWindow = currentModal.querySelector(".modal__window");
         const btnClose = currentModal.querySelector(".modal__close");
 
-        modalTop(modalWindow)
+        modalTop(modalWindow);
 
         btnClose.addEventListener("click", handleClose);
 
