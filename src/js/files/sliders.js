@@ -107,9 +107,31 @@ export default function sliders() {
           spaceBetween: 16,
         },
         577: {
-          centeredSlides: false
-        }
-      }
+          centeredSlides: false,
+        },
+      },
+    });
+  }
+
+  const gallerySlider = document.querySelector(".gallery__slider");
+
+  if (gallerySlider) {
+    const swiper = new Swiper(gallerySlider, {
+      speed: 700,
+      simulateTouch: false,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 10,
+      initialSlide: 1,
+      navigation: {
+        nextEl: " .gallery__slider-btn--next",
+        prevEl: " .gallery__slider-btn--prev",
+      },
+      breakpoints: {
+        993: {
+          spaceBetween: 16,
+        },
+      },
     });
   }
 }
