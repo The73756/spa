@@ -7,7 +7,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 120%;
-    color: var(--text-1);
+    color: var(--text-1, #161515);
 
     @include laptop {
       margin-top: 1px;
@@ -46,7 +46,7 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 130%;
-      color: var(--text-1);
+      color: var(--text-1, #161515);
     }
 
     ol {
@@ -60,28 +60,29 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: var(--text-2);
+      color: var(--text-2, #252525);
     }
 
     ol ol {
       counter-reset: list3;
       margin-top: 12px;
+      padding-left: 20px;
     }
 
     ol ol li::before {
       counter-increment: list3;
-      content: counter(list1) "." counter(list2) "." counter(list3) ". ";
+      content: counter(list3) ". ";
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
-      color: var(--text-2);
+      color: var(--text-2, #252525);
     }
 
     ol ol ol {
       counter-reset: list4;
       list-style-type: decimal;
       list-style-position: outside;
-      padding-left: 25px;
+      padding-left: 40px;
     }
 
     ol ol ol li::before {
@@ -101,9 +102,7 @@
 
     ul li::before {
       counter-increment: list5;
-      content: counter(list5) ".";
-      font-size: 0;
-      visibility: hidden;
+      content: "";
     }
 
     @include laptop-min {
@@ -116,7 +115,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: var(--text-2);
+    color: var(--text-2, #252525);
 
     &:not(:last-child) {
       margin-bottom: 12px;
