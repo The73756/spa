@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main class="main">
+      <div class="container">
+        <ul class="list breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      @@include('html/components/contacts-big.html')
+      @@include('html/components/location.html')
+      @@include('html/components/requisites.html')
+    </main>
+    @@include('html/components/footer.html')
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
