@@ -8,7 +8,7 @@ export default function maps() {
 
       const map = new ymaps.Map("contacts-map", {
         center,
-        zoom
+        zoom,
       });
 
       map.controls.remove("geolocationControl"); // удаляем геолокацию
@@ -19,7 +19,32 @@ export default function maps() {
       map.controls.remove("zoomControl"); // удаляем контрол зуммирования
       map.controls.remove("rulerControl"); // удаляем контрол правил
       map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты (опционально)
+    }
 
+    ymaps.ready(init);
+  }
+
+  const locationMap = document.querySelector("#location-map");
+
+  if (locationMap) {
+    function init() {
+      const center = JSON.parse(locationMap.dataset.center);
+      const zoom = Number(locationMap.dataset.zoom);
+      const coord = JSON.parse(locationMap.dataset.coord);
+
+      const map = new ymaps.Map("location-map", {
+        center,
+        zoom,
+      });
+
+      map.controls.remove("geolocationControl"); // удаляем геолокацию
+      map.controls.remove("searchControl"); // удаляем поиск
+      map.controls.remove("trafficControl"); // удаляем контроль трафика
+      map.controls.remove("typeSelector"); // удаляем тип
+      map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+      map.controls.remove("rulerControl"); // удаляем контрол правил
+      map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты (опционально)
     }
 
     ymaps.ready(init);
