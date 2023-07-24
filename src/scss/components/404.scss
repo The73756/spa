@@ -1,0 +1,39 @@
+.error {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+  color: #fff;
+
+  &__container {
+    @include laptop {
+      padding: 0;
+    }
+  }
+
+  &__body {
+    min-height: 480px;
+
+    @include laptop {
+      padding: 48px 24px;
+    }
+
+    @include tablet {
+      align-content: flex-start;
+      padding: 48px 16px 48px 20px;
+      min-height: 561px;
+      gap: 32px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
