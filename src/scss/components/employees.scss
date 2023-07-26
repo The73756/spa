@@ -23,6 +23,20 @@
     }
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @include laptop-min {
+      gap: 60px;
+    }
+
+    @include mobile {
+      row-gap: 40px;
+    }
+  }
+
   &__content {
     margin-bottom: 12px;
   }
