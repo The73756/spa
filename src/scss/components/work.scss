@@ -38,7 +38,9 @@
     }
 
     &-wrapper {
-      max-width: 535px;
+      @include laptop {
+        max-width: 535px;
+      }
     }
 
     @include laptop-min {

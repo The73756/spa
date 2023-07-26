@@ -66,6 +66,11 @@
     }
   }
 
+  &__price-desc {
+    display: flex;
+    align-items: baseline;
+  }
+
   &__subtitle {
     margin: 0 20px 0 0;
 
@@ -194,6 +199,11 @@
     border-top: 1px solid var(--beige);
     padding-top: 25px;
     gap: 30px;
+
+    &-mini {
+      justify-content: flex-start;
+      gap: 100px;
+    }
 
     @include tablet {
       padding-top: 15px;

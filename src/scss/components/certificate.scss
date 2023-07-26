@@ -145,10 +145,10 @@
 
       &-content {
         margin: 0;
-        font-weight: 300;
+        color: var(--text-4);
         font-size: 14px;
+        font-weight: 400;
         line-height: 150%;
-        opacity: 0.56;
 
         @include laptop-min {
           font-size: 12px;
@@ -165,6 +165,12 @@
     &__wrapper {
       padding-top: 104px;
       padding-bottom: 104px;
+      justify-content: flex-start;
+      gap: 104px;
+
+      @include laptop-min {
+        gap: 0;
+      }
 
       @include mobile {
         padding-top: 80px;
@@ -174,8 +180,10 @@
 
     &__title {
       max-width: 416px;
+      margin-left: -30px;
 
       @include desktop {
+        margin-left: 0;
         margin-bottom: 32px;
       }
     }
