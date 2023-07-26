@@ -21,9 +21,11 @@ export function overflowTextMore() {
           if (isHide) {
             isHide = false;
             item.style.display = "block";
+            item.closest("div").style.maxHeight = "none"
             btnMore.textContent = "Скрыть";
           } else {
             isHide = true;
+            item.closest("div").style.removeProperty("max-height")
             item.style.display = "-webkit-box";
             btnMore.textContent = "Читать дальше";
           }
