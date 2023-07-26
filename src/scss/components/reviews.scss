@@ -45,12 +45,13 @@
     display: flex;
     flex-direction: column;
     padding: 32px;
-    min-height: 336px;
+    max-height: 341px;
     box-sizing: border-box;
     background-color: #fff;
 
     @include laptop {
       padding: 24px;
+      max-height: 276px;
     }
   }
 
